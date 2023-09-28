@@ -25,7 +25,6 @@ lazy val root = (project in file(".")).
     libraryDependencies ++= Seq(
       "org.apache.spark" %% "spark-streaming" % sparkVersion.value % "provided",
       "org.apache.spark" %% "spark-sql" % sparkVersion.value % "provided",
-      "ru.mardaunt"        %% "pysparkwrapper" % "0.1.0",
       "org.apache.spark" %% "spark-core" % sparkVersion.value % "provided"
     ),
 

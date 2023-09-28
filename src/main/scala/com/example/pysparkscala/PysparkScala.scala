@@ -35,30 +35,5 @@ object PysparkScala {
 
     spark.sql("SELECT * FROM table").show()
 
-    //spark.stop()
   }
 }
-
-//class PysparkScala(spark: SparkSession, logger: Logger)
-//  extends PySparkApp(mainPyName = "pyspark_main.py", needKerberosAuth = false)(spark, logger) {
-//
-//  override protected val starterTool: String = "spark-submit"
-//}
-//
-//object PysparkScala extends App {
-//  lazy val spark = SparkSession.builder()
-//                               .master("local[*]").appName("Spark Python Runner")
-//                               .getOrCreate()
-//
-//  import spark.implicits._
-//  val columns = Seq("language","users_count")
-//  val data = Seq(("Java", "20000"), ("Python", "100000"), ("Scala", "3000"))
-//  val rdd = spark.sparkContext.parallelize(data)
-//  val df = rdd.toDF()
-//  df.createOrReplaceTempView("table")
-//  
-//  new PysparkScala(spark, SimpleLogger()).run()
-//
-//
-//  spark.sql("Select * from table").show()
-//}
