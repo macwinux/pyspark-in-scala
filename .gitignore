@@ -18,6 +18,13 @@ mini-complete-example/sbt/*.jar
 #Emacs
 *~
 
+.bloop/
+.bsp/
+.vscode/
+.metals/
+project/.bloop/
+project/project/
+project/target/
 #ignore the metastore
 metastore_db/*
 
